@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" href="../comon/css/style.css">
+<link rel="stylesheet" href="https://use.typekit.net/xyg0gii.css">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>cafe HOME</title>
+		</head>
+<body>
+<header> <a href="../index.html"><img src="../comon/images/logo.png" alt="ロゴ"></a>
+  <nav>
+    <ul class="header_nav">
+      <li class="header_nav_list"> <a href="../index.html">top</a> </li>
+      <li class="header_nav_list"> <a href="../index.html" class="nav_manu">menu</a> </li>
+      <li class="header_nav_list"> <a href="#">accsess</a> </li>
+      <li class="header_nav_list"> <a href="contact.html">contact</a> </li>
+    </ul>
+  </nav>
+</header>
+<main>
+<div class="Area">
+<div>
+  <h2 class="contact">contact</h2>
+</div>
+<div class="contact_Area">
+<form action="confirm.php" method="post" name="form" onsubmit="return validate()">
+<div>
+  <div>
+    <label class="hissu_kannkaku">
+    お名前
+    <div class="hissu_haikei">
+      <div class="hissu_font">必須</div>
+    </div>
+    </label>
+    <input type="text" style="width: 500px;height: 30px;" name="name" placeholder="例）山田太郎" value="">
+  </div>
+  <div>
+    <label class="hissu_kannkaku">
+    ふりがな
+    <div class="hissu_haikei">
+      <div class="hissu_font">必須</div>
+    </div>
+    </label>
+    <input type="text" style="width: 500px;height: 30px;" name="furigana" placeholder="例）やまだたろう" value="">
+  </div>
+  <div>
+    <label class="hissu_kannkaku">
+    メールアドレス
+    <div class="hissu_haikei">
+      <div class="hissu_font">必須</div>
+    </div>
+    </label>
+    <input type="text" style="width: 500px;height: 30px;" name="email" placeholder="例）guest@example.com" value="">
+  </div>
+  <div>
+    <label class="hissu_kannkaku">
+    電話番号
+    <div class="hissu_haikei">
+      <div class="hissu_font">必須</div>
+    </div>
+    </label>
+    <input type="text" style="width: 500px; height: 30px;" name="tel" placeholder="例）0000000000" value="">
+  </div>
+  <div>
+    <label class="hissu_kannkaku">
+    性別
+    <div class="hissu_haikei">
+      <div class="hissu_font">必須</div>
+    </div>
+    </label>
+    <input type="radio" name="sex" value="男性" checked>
+    男性
+    <input type="radio" name="sex" value="女性">
+    女性 </div>
+  <div>
+    <label class="hissu_kannkaku">
+    お問い合わせ項目
+    <div class="hissu_haikei">
+      <div class="hissu_font">必須</div>
+    </div>
+    </label>
+    <select name="item">
+      <option value="">お問い合わせ項目を選択してください</option>
+      <option value="ご質問・お問い合わせ">ご質問・お問い合わせ</option>
+      <option value="ご意見・ご感想">ご意見・ご感想</option>
+    </select>
+  </div>
+  <div>
+    <label class="hissu_kannkaku">
+    お問い合わせ内容
+    <div class="hissu_haikei">
+      <div class="hissu_font">必須</div>
+    </div>
+  </label>
+	 </div>
+  <textarea name="content" rows="20"  cols="100" placeholder="お問合せ内容を入力"></textarea>
+<img src="image/button.png" alt="送信ボタン" class="sousinnbotann"> 
+</div>
+</main>
+<fotter>
+		<div class="fotter_Area">
+			<div class="fotter_twitter_logo">
+				<a href="#"><img src="../comon/images/Twitter.png" alt="ツイッターロゴ" ></a></div>
+			<div class="fotter_insta_logo">
+			 <a href="#">
+			 <img src="../comon/images/insta.png" alt="インスタロゴ"></a>
+			</div>			
+		</div>
+		<small>@Copyright 2021 cafe HOME</small><a href="#" class="fotter_yajirusi">
+		<img src="../comon/images/bread.png" alt="矢印パン"></a>
+	</fotter>
+	<!--WEBフォント-->
+<script>
+  $(function(d) {
+    var config = {
+      kitId: 'dxd2rai',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+
+	<!--script-->
+	<script>
+$(function(){
+  $('a[href^="#"]').click(function(){
+    var speed = 500;
+    var href= $(this).attr("href");
+    var target = $(href == "" || href == "" ? 'html' : href);
+    var position = target.offset().top;
+    $("html, body").animate({scrollTop:position}, speed, "swing");
+    return false;
+  });
+});
+</script>
+</body>
+</html>
