@@ -1,0 +1,261 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: brown;
+}
+header {
+  background-color: #fdd7a2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1%;
+}
+.hedder_logo{
+	margin-top: 5px;
+}
+.header_nav {
+  display: flex;
+  margin: 0 57px;
+  list-style: none;
+  font-family: adobe-caslon-pro, serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.header_nav_list {
+  margin-left: 150px;
+  font-size: 35px;
+  text-decoration: none;
+	margin-top: 5px;
+}
+
+.concept_Area{;
+	position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+overflow: hidden;
+}
+.main_image {
+  display: block;
+position: relative;
+  width: 100%;
+	
+}
+.main_frame {
+	max-width: 1000px;
+	max-height: 500px;
+position: absolute;
+  display: block;
+  background-color: #fff8ed;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  border: solid #670e0e 10px;
+  z-index: 2;
+}
+.concept_text{
+	display: block;
+	margin-top: 50px;
+	font-family: source-han-sans-japanese,sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+.concept_title{
+	font-family: adobe-caslon-pro, serif;
+	color: brown;
+	font-size: 60px;
+}
+.concept_text_1{
+	font-size: 60px;
+	color: brown;
+}
+.concept_text_2{
+	font-size: 35px;
+	color: brown
+}
+.concept_text_3{
+	font-size: 35px;
+	color: brown;
+}
+.Area {
+  max-width: 1200px;
+  margin-top: 40px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.banner_top {
+  display: flex;
+  text-align: center;
+  width: 100%;
+}
+.banner_top a {
+  width: 50%;
+}
+.banner_top a:nth-child(1) {
+  margin-right: 80px;
+}
+.banner_bottom {
+  text-align: center;
+}
+.bunner1 {
+  width: 100%;
+}
+.bunner2 {
+  width: 100%;
+}
+
+.bunner3 {
+  justify-content: center;
+  margin-top: 2%;
+	width: 70%;
+}
+.menu_fream {
+  /*  margin: 2% 0 0 27%;
+  z-index: 6;
+  background-image: url(../../images/images/menuban.png);*/
+}
+.menu {
+  position: relative;
+  padding-left: 15%;
+}
+h2 {
+	font-family: adobe-caslon-pro, serif;
+	font-size: 60px;
+	margin-left: 220px;
+	color: brown;
+}
+.menu_up {
+  position: absolute;
+  top: 100px;
+  margin-left: 114px;
+  width: 575px;
+}
+.menu_drink {
+  font-size: 40px;
+  font-family: adobe-caslon-pro, serif;
+margin-left: 250px;
+}
+.menu_position{
+	display: flex;
+	margin-top: 40px;
+	margin-left: 40px;
+}
+
+.menu_drink_text {
+  font-family: adobe-caslon-pro, serif;
+  font-size: 25px;
+	margin-left: 80px;
+}
+.menu_food{
+	font-size: 40px;
+  font-family: adobe-caslon-pro, serif;
+margin-left: 258px;
+	margin-top: 50px;
+	
+}
+
+.menu_food_text{
+	font-family: adobe-caslon-pro, serif;
+  font-size: 25px;
+	margin-left: 50px;
+}
+
+
+table {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 3%;
+}
+
+caption {
+  font-family: adobe-caslon-pro, serif;
+  font-size: 70px;
+	color: brown;
+}
+
+table tr td {
+  font-size: 17px;
+}
+
+tr:nth-child(odd) {
+  background-color: #fff2cc;
+}
+
+fotter {
+  position: relative;
+  height: 200px;
+  display: block;
+  background-color: #fdd7a2;
+	overflow: hidden;
+}
+.fotter_Area{
+  display: flex;
+	max-width: 100px;
+	margin-left: auto;
+	margin-right:auto;
+}
+.fotter_twitter_logo {
+ margin-right: 30px;
+	margin-top: 15px;
+}
+
+.fotter_insta_logo {
+  margin-right: 30px;
+	margin-top: 15px;
+}
+
+.fotter_yajirusi {
+  position: absolute;
+  right: 1rem;
+  top: 2rem;
+}
+
+small {
+	max-width: 190px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+  margin-top: 70px;
+}
+
+/*<!--以降contact.html-->*/
+.contact_Area{
+  margin-left: 200px;
+  margin-bottom: 100px;
+}
+.contact{
+	margin-left: 490px
+}
+
+.hissu_haikei{
+	background-color: #d84141;
+	width: 40px;
+	margin-left: 30px;
+  margin-bottom: 10px;
+
+}
+
+.hissu_font{
+	color: aliceblue;
+	margin-left: 4px;
+}
+
+.hissu_kannkaku{
+	display: flex;
+  margin-top: 10px;
+}
+.sousinnbotann{
+	margin-left: 350px;
+    margin-top: 100px;
+  bottom: auto;
+}
