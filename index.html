@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="comon/js/index.js"></script>
+<link rel="stylesheet" href="comon/css/style.css">
+<link rel="stylesheet" href="https://use.typekit.net/xyg0gii.css">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>cafe HOME</title>
+</head>
+
+<body>
+<header> <a href="#" class="hedder_logo"><img src="comon/images/logo.png" alt="ロゴ"></a>
+  <nav>
+    <ul class="header_nav">
+      <li class="header_nav_list"> <a href="index.html">top</a> </li>
+      <li class="header_nav_list"> <a href="#">menu</a> </li>
+      <li class="header_nav_list"> <a href="#">accsess</a> </li>
+      <li class="header_nav_list"> <a href="contact/contact.html">contact</a> </li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <div class="concept_Area"><img src="images/images/main_picture.jpg" alt="メイン画像" class="main_image">
+    <div class="main_frame">
+      <div class="concept_text">
+      <h1 class="concept_title">concept</h1>
+      <br>
+      <p class="concept_text_1">心から安心出来る場所</p><br><p class="concept_text_2">お客様が心から安心できる</p><br>
+      <p class="concept_text_3">第２の家になることを目指しています。</p>
+      </div>
+    </div>
+  </div>
+  <div class="Area">
+    <div class="banner_top"> <a href="#"><img src="images/images/banner1.jpg" alt="バナー1" class="bunner1"></a> <a href="#"><img src="images/images/bannar2.jpg" alt="バナー2" class="bunner2"></a> </div>
+    <div class="banner_bottom"> <a href="#"><img src="images/images/bannar3.jpg" alt="バナー3" class="bunner3"></a> </div>
+    <div class="class menu">
+      <div> <img src="images/images/menuban.png" alt="メニュー板" class="menu_fream">
+        <div class="menu_up">
+          <h2>menu</h2>
+          <h2 class="menu_drink">drink</h2>
+          <div class="menu_position"> <img src="images/images/creamsoda.png" alt="クリームソーダ">
+            <ul class="menu_drink_text">
+              <li>100%オレンジジュース</li>
+              <li>クリームソーダ</li>
+              <li>紅茶</li>
+              <li>コーヒー</li>
+              <li>ココア</li>
+            </ul>
+          </div>
+          <h2 class="menu_food">food</h2>
+          <div class="menu_position"><img src="images/images/medamayaki.png" alt="目玉焼き">
+            <ul class="menu_food_text">
+              <li>ベーコンエッグ</li>
+              <li>手作りトースト</li>
+              <li>焼きたてクロワッサン</li>
+              <li>パンケーキ</li>
+              <li>スポンジケーキ</li>
+              <li>オニオンフライ</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <table>
+      <caption>
+      news
+      </caption>
+      <tr>
+        <td>2021年●月×日<br>
+          webサイト更新のお知らせ</td>
+      </tr>
+      <tr>
+        <td>2021年●月▲日<br>
+          〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇</td>
+      </tr>
+      <tr>
+        <td>2021年●月□日<br>
+          〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇</td>
+      </tr>
+    </table>
+  </div>
+</main>
+	<fotter>
+		<div class="fotter_Area">
+			<div class="fotter_twitter_logo">
+				<a href="#"><img src="comon/images/Twitter.png" alt="ツイッターロゴ" ></a></div>
+			<div class="fotter_insta_logo">
+			 <a href="#">
+			 <img src="comon/images/insta.png" alt="インスタロゴ"></a>
+			</div>			
+		</div>
+		<small>@Copyright 2021 cafe HOME</small><a href="#" class="fotter_yajirusi">
+		<img src="comon/images/bread.png" alt="矢印パン"></a>
+	</fotter>
+
+	
+	<!--WEBフォント-->
+<script>
+  $(function(d) {
+    var config = {
+      kitId: 'dxd2rai',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+
+	<!--script-->
+	<script>
+$(function(){
+  $(class="fotter_yajirusi").click(function(){
+    var speed = 500;
+    var href= $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = target.offset().top;
+    $("html, body").animate({scrollTop:position}, speed, "swing");
+    return false;
+  });
+});
+</script>
+</body>
+	
+</html>
